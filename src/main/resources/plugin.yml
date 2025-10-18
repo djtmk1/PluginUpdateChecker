@@ -1,0 +1,20 @@
+name: PluginUpdateChecker
+version: 1.1
+main: com.busybee.pluginupdatechecker.PluginUpdateChecker
+api-version: 1.21
+commands:
+  checkupdates:
+    description: Checks for plugin updates.
+    usage: /checkupdates
+    permission: pluginupdater.check
+  autoupdate:
+    description: Automatically updates plugins from the updates.yml file.
+    usage: /autoupdate
+    permission: pluginupdater.autoupdate
+permissions:
+  pluginupdater.check:
+    description: Allows the user to check for plugin updates.
+    default: op
+  pluginupdater.autoupdate:
+    description: Allows the user to run the auto-updater.
+    default: op
